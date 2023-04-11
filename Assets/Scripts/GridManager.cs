@@ -6,22 +6,31 @@ using UnityEngine.UIElements;
 
 public class GridManager : MonoBehaviour
 {
-    public int columnLenght;
-    public int rowLenght;
-    public float x_Space;
-    public float y_Space;
-    public float x_Start;
-    public float y_Start;
-    public float z_Start;
+    private int columnLenght = 8;
+    private int rowLenght = 3;
+
+    [Header("Grid X, Y & Z positions")]
+    [SerializeField] float x_Space;
+    [SerializeField] float y_Space;
+    [SerializeField] float x_Start;
+    [SerializeField] float y_Start;
+    [SerializeField] float z_Start;
+    
     public List<GameObject> cardPrefabs;
     
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < columnLenght * rowLenght; i++) 
+        // The two for loops add the counting of columns & rows.
+        for (int x = 0; x < columnLenght; x++)
         {
-            int index = Random.Range(0, cardPrefabs.Count);
-            Instantiate(cardPrefabs[index], new Vector3(x_Start + (x_Space * (i % columnLenght)), y_Start + (-y_Space * (i / columnLenght)), z_Start + (0)), Quaternion.Euler(270, 0, 0));
+            for (int y = 0; y < rowLenght; y++)
+            {
+                int index = Random.Range(0, cardPrefabs.Count);
+                Instantiate(cardPrefabs[index], new Vector3(x_Start + (x_Space * x), y_Start + (y_Space * y), z_Start), Quaternion.Euler(270, 0, 0));
+                // The remove card is necessary for the Instantiate method not being able to clone more than once each object from the list.
+                cardPrefabs.RemoveAt(index);
+            }
         }
     }
 

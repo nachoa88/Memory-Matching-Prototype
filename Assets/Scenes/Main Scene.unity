@@ -1702,25 +1702,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 619b8728766f7e345995419c7c70e5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columnLenght: 8
-  rowLenght: 3
   x_Space: 1.6
   y_Space: 2.2
   x_Start: -5.5
-  y_Start: 0
+  y_Start: -4.5
   z_Start: 8.4
   cardPrefabs:
   - {fileID: 5895391800953458550, guid: fbeae04a1b4bf0f44894ce385833430f, type: 3}
+  - {fileID: 5895391800953458550, guid: fbeae04a1b4bf0f44894ce385833430f, type: 3}
+  - {fileID: 6253856492925557447, guid: 88f9006d0fdbe634ab13375e93aacbe9, type: 3}
   - {fileID: 6253856492925557447, guid: 88f9006d0fdbe634ab13375e93aacbe9, type: 3}
   - {fileID: 2473344390782721547, guid: 0563323312e8f75468383df5c2b2f514, type: 3}
+  - {fileID: 2473344390782721547, guid: 0563323312e8f75468383df5c2b2f514, type: 3}
+  - {fileID: 3689753631667708629, guid: 3b6d04f0749a0c447947fd448273aaaf, type: 3}
   - {fileID: 3689753631667708629, guid: 3b6d04f0749a0c447947fd448273aaaf, type: 3}
   - {fileID: 5717767009193319403, guid: ab424fd2bc5d7b44a8df2ff0050d4072, type: 3}
+  - {fileID: 5717767009193319403, guid: ab424fd2bc5d7b44a8df2ff0050d4072, type: 3}
+  - {fileID: 8190328602973815777, guid: 91ba7e97fd0f6f145bb7733b5d745b14, type: 3}
   - {fileID: 8190328602973815777, guid: 91ba7e97fd0f6f145bb7733b5d745b14, type: 3}
   - {fileID: 3374448185657980085, guid: 1225cc3e02d74184c968d67ef220fffc, type: 3}
+  - {fileID: 3374448185657980085, guid: 1225cc3e02d74184c968d67ef220fffc, type: 3}
+  - {fileID: 206946628520548325, guid: 6cab1526e2312b94b9e74fdf678510c4, type: 3}
   - {fileID: 206946628520548325, guid: 6cab1526e2312b94b9e74fdf678510c4, type: 3}
   - {fileID: 3758674342552565852, guid: 6b9efb92d08c64943989a7bf603dddb6, type: 3}
+  - {fileID: 3758674342552565852, guid: 6b9efb92d08c64943989a7bf603dddb6, type: 3}
+  - {fileID: 8267219864048419495, guid: 9e1ebf37064aa63499c97727c833d8c8, type: 3}
   - {fileID: 8267219864048419495, guid: 9e1ebf37064aa63499c97727c833d8c8, type: 3}
   - {fileID: 4520481899712749725, guid: bde2badb064fc7f45a01871637521b5c, type: 3}
+  - {fileID: 4520481899712749725, guid: bde2badb064fc7f45a01871637521b5c, type: 3}
+  - {fileID: 2546508163019190247, guid: b4d0eae9d9733be46a7240f4b232a349, type: 3}
   - {fileID: 2546508163019190247, guid: b4d0eae9d9733be46a7240f4b232a349, type: 3}
 --- !u!1001 &1446722244
 PrefabInstance:
